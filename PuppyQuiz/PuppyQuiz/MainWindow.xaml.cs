@@ -93,7 +93,7 @@ namespace PuppyQuiz
             {
                 //get json puppy sheepadoodle
             }
-            else if (q2.SelectedItem == q2.19-30 && q6.SelectedItem == q2.Mexican)
+            else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
             {
                 //get json puppy chihuahua
             }
