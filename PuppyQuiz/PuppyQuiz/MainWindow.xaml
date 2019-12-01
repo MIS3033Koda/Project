@@ -17,6 +17,18 @@
         <TextBox HorizontalAlignment="Left" Height="22" Margin="10,317,0,0" TextWrapping="Wrap" Text="8." VerticalAlignment="Top" Width="24"/>
         <TextBox HorizontalAlignment="Left" Height="22" Margin="10,355,0,0" TextWrapping="Wrap" Text="9." VerticalAlignment="Top" Width="24"/>
         <TextBox HorizontalAlignment="Left" Height="22" Margin="10,391,0,0" TextWrapping="Wrap" Text="10." VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="244,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
+        <Label Content="Please enter your name" HorizontalAlignment="Left" Height="34" Margin="52,31,0,0" VerticalAlignment="Top" Width="171"/>
+        <Label Content="What is your favorite color?" HorizontalAlignment="Left" Height="31" Margin="52,69,0,0" VerticalAlignment="Top" Width="160"/>
+        <RadioButton Content="Blue" HorizontalAlignment="Left" Height="18" Margin="229,73,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Red" HorizontalAlignment="Left" Height="18" Margin="337,73,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Green" HorizontalAlignment="Left" Height="18" Margin="436,73,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Purple" HorizontalAlignment="Left" Height="18" Margin="530,73,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="What is your favorite animal?" HorizontalAlignment="Left" Height="32" Margin="52,109,0,0" VerticalAlignment="Top" Width="171"/>
+        <RadioButton Content="Giraffe" HorizontalAlignment="Left" Height="18" Margin="229,111,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Elephant" HorizontalAlignment="Left" Height="18" Margin="323,109,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Lion" HorizontalAlignment="Left" Height="18" Margin="436,109,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Penguin" HorizontalAlignment="Left" Height="18" Margin="535,109,0,0" VerticalAlignment="Top" Width="94"/>
 
     </Grid>
 </Window>
