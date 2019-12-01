@@ -118,7 +118,7 @@ namespace PuppyQuiz
             }
             else
             {
-                //get json puppy labrador retriever
+                puppy="labradorretriever";
             }
 
 
