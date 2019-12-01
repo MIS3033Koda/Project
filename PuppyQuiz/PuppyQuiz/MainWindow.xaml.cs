@@ -35,39 +35,45 @@ namespace PuppyQuiz
         private void SubmitBtn_Click(object sender, RoutedEventArgs e)
         {
             //declare variables
+            string puppy = string.Empty;
 
+            // if (RedRB.IsChecked)
 
+            //    {
+            //      exit = true;
+           //       MessageBoxImage.Show
+            //    }
 
             //logic
             //--need json request - bitmapimage
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{txtUserDog.Text}/images/random").Result;
+                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
 
                 if (response.IsSuccessStatusCode)
                 {
                     //check input - string.Contains
                     //If(UserInput == 
                     var content = response.Content.ReadAsStringAsync().Result;
-                    var dogPicture = JsonConvert.DeserializeObject<DogBreed>(content);
+                    var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
 
 
 
                     //txtDogBreed.Text
-                    BitmapImage dogImage = new BitmapImage();
-                    dogImage.BeginInit();
-                    dogImage.UriSource = new Uri(dogPicture.message);
-                    dogImage.EndInit();
+                    //BitmapImage dogImage = new BitmapImage();
+                    //dogImage.BeginInit();
+                    //dogImage.UriSource = new Uri(dogPicture.message);
+                    //dogImage.EndInit();
 
-                    imgDog.Source = dogImage;
+                    MessageBox.Show(dogPicture.message);
 
 
                 }
                 else
                 {
-                    MessageBox.Show("Error! Please enter a valid dog breed.");
+                    
                 }
-                txtUserDog.Text = string.Empty;
+                
 
 
 
