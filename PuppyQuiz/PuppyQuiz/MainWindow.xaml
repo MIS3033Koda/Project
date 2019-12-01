@@ -7,16 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,31,0,0" TextWrapping="Wrap" Text="1." VerticalAlignment="Top" Width="24"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,69,0,0" TextWrapping="Wrap" Text="2." VerticalAlignment="Top" Width="24"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,109,0,0" TextWrapping="Wrap" Text="3." VerticalAlignment="Top" Width="24"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,150,0,0" TextWrapping="Wrap" Text="4." VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.608,4.982"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,189,0,0" TextWrapping="Wrap" Text="5." VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.642,1.273"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,232,0,0" TextWrapping="Wrap" Text="6." VerticalAlignment="Top" Width="24"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,273,0,0" TextWrapping="Wrap" Text="7." VerticalAlignment="Top" Width="24"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,317,0,0" TextWrapping="Wrap" Text="8." VerticalAlignment="Top" Width="24"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,355,0,0" TextWrapping="Wrap" Text="9." VerticalAlignment="Top" Width="24"/>
-        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,391,0,0" TextWrapping="Wrap" Text="10." VerticalAlignment="Top" Width="24"/>
         <TextBox HorizontalAlignment="Left" Height="30" Margin="244,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
         <Label Content="Please enter your name" HorizontalAlignment="Left" Height="34" Margin="52,31,0,0" VerticalAlignment="Top" Width="171"/>
         <Label Content="What is your favorite color?" HorizontalAlignment="Left" Height="31" Margin="52,69,0,0" VerticalAlignment="Top" Width="160"/>
@@ -25,10 +15,26 @@
         <RadioButton Content="Green" HorizontalAlignment="Left" Height="18" Margin="436,73,0,0" VerticalAlignment="Top" Width="94"/>
         <RadioButton Content="Purple" HorizontalAlignment="Left" Height="18" Margin="530,73,0,0" VerticalAlignment="Top" Width="94"/>
         <Label Content="What is your favorite animal?" HorizontalAlignment="Left" Height="32" Margin="52,109,0,0" VerticalAlignment="Top" Width="171"/>
-        <RadioButton Content="Giraffe" HorizontalAlignment="Left" Height="18" Margin="229,111,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton Content="Elephant" HorizontalAlignment="Left" Height="18" Margin="323,109,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton Content="Lion" HorizontalAlignment="Left" Height="18" Margin="436,109,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton Content="Penguin" HorizontalAlignment="Left" Height="18" Margin="535,109,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Giraffe" HorizontalAlignment="Left" Height="18" Margin="229,115,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Elephant" HorizontalAlignment="Left" Height="18" Margin="337,115,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="-0.032,0.644"/>
+        <RadioButton Content="Lion" HorizontalAlignment="Left" Height="18" Margin="436,115,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Penguin" HorizontalAlignment="Left" Height="18" Margin="530,115,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="What is your favorite season?" HorizontalAlignment="Left" Height="30" Margin="52,150,0,0" VerticalAlignment="Top" Width="171"/>
+        <RadioButton Content="Winter" HorizontalAlignment="Left" Height="18" Margin="229,154,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Spring" HorizontalAlignment="Left" Height="18" Margin="337,154,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Summer" HorizontalAlignment="Left" Height="18" Margin="436,154,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton Content="Fall" HorizontalAlignment="Left" Height="18" Margin="530,154,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="What is your favorite food?" HorizontalAlignment="Left" Height="30" Margin="52,189,0,0" VerticalAlignment="Top" Width="160"/>
+        <Label Content="1." HorizontalAlignment="Left" Height="34" Margin="10,31,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label Content="2." HorizontalAlignment="Left" Height="34" Margin="10,69,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label Content="3." HorizontalAlignment="Left" Height="34" Margin="10,109,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label Content="4." HorizontalAlignment="Left" Height="34" Margin="10,148,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label Content="5." HorizontalAlignment="Left" Height="34" Margin="10,189,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label Content="6." HorizontalAlignment="Left" Height="34" Margin="10,223,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label Content="7." HorizontalAlignment="Left" Height="34" Margin="10,262,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label Content="8." HorizontalAlignment="Left" Height="34" Margin="10,296,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.492,0.688"/>
+        <Label Content="9." HorizontalAlignment="Left" Height="34" Margin="10,330,0,0" VerticalAlignment="Top" Width="24"/>
+        <Label Content="10." HorizontalAlignment="Left" Height="34" Margin="10,364,0,0" VerticalAlignment="Top" Width="24"/>
 
     </Grid>
 </Window>
