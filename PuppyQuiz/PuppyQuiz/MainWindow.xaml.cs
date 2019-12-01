@@ -65,7 +65,7 @@ namespace PuppyQuiz
                     var content = response.Content.ReadAsStringAsync().Result;
                     var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
 
-                  
+
 
                     //txtDogBreed.Text
                     //BitmapImage dogImage = new BitmapImage();
@@ -86,6 +86,20 @@ namespace PuppyQuiz
 
 
             }
+
+        }
+        private void SubmitBtn_Click_1(object sender, RoutedEventArgs e)
+        {
+            if ("adam" == NameTB.Text.ToLower())
+            {
+                //get json puppy sheepadoodle
+            }
+            else if (q2.SelectedItem == q2.19-30 && q6.SelectedItem == q2.Mexican)
+            {
+                //get json puppy chihuahua
+            }
+            else if (question)
+        }
+
     }
 }
-    }
