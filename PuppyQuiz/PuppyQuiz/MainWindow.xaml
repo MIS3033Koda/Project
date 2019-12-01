@@ -32,14 +32,10 @@
         <Label x:Name="EigthQuestion" Content="What do you like to do on a rainy day?" HorizontalAlignment="Left" Height="30" Margin="54,74.2,0,0" VerticalAlignment="Top" Width="222" Grid.Row="1"/>
         <Label x:Name="NinethQuestion" Content="What is your eye color?" HorizontalAlignment="Left" Height="29" Margin="54,109.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1"/>
         <Label x:Name="TenthQuestion" Content="Which one is better?" HorizontalAlignment="Left" Height="34" Margin="54,138.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1"/>
-        <RadioButton x:Name="_0to18RB" Content="0 - 18" HorizontalAlignment="Left" Height="18" Margin="246,206,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="_19to30RB" Content="19 - 30" HorizontalAlignment="Left" Height="18" Margin="354,206,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="_31to60RB" Content="31 - 60" HorizontalAlignment="Left" Height="18" Margin="453,206,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="_61toAboveRB" Content="61 - Above" HorizontalAlignment="Left" Height="18" Margin="547,206,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="ItalianRB" Content="Italian " HorizontalAlignment="Left" Height="18" Margin="246,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton x:Name="MexicanRB" Content="Mexican" HorizontalAlignment="Left" Height="18" Margin="354,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton x:Name="IndianRB" Content="Indian" HorizontalAlignment="Left" Height="18" Margin="453,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton x:Name="ChineseRB" Content="Chinese " HorizontalAlignment="Left" Height="18" Margin="547,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="ItalianRB" Content="Italian " HorizontalAlignment="Left" Height="18" Margin="400,149,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton x:Name="MexicanRB" Content="Mexican" HorizontalAlignment="Left" Height="18" Margin="508,149,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton x:Name="IndianRB" Content="Indian" HorizontalAlignment="Left" Height="18" Margin="607,149,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton x:Name="ChineseRB" Content="Chinese " HorizontalAlignment="Left" Height="18" Margin="701,149,0,0" VerticalAlignment="Top" Width="94"/>
         <RadioButton x:Name="CookiesnCreamRB" Content="Cookies n Cream" HorizontalAlignment="Left" Height="18" Margin="281,42.2,0,0" VerticalAlignment="Top" Width="118" Grid.Row="1"/>
         <RadioButton x:Name="BirthdayCakeRB" Content="Birthday Cake" HorizontalAlignment="Left" Height="18" Margin="417,42.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
         <RadioButton x:Name="NuttyRB" Content="Nutty" HorizontalAlignment="Left" Height="18" Margin="537,42.2,0,0" VerticalAlignment="Top" Width="94" Checked="RadioButton_Checked" Grid.Row="1"/>
@@ -73,6 +69,18 @@
             <ComboBoxItem x:Name="Spring" Content="Spring"/>
             <ComboBoxItem x:Name="Summer" Content="Summer"/>
             <ComboBoxItem x:Name="Fall" Content="Fall"/>
+        </ComboBox>
+        <ComboBox x:Name="q5" HorizontalAlignment="Left" Height="30" Margin="246,200,0,0" VerticalAlignment="Top" Width="139" RenderTransformOrigin="0.527,4.713">
+            <ComboBoxItem x:Name="_0to18" Content="0-18" HorizontalAlignment="Left" Width="137"/>
+            <ComboBoxItem x:Name="_19to30" Content="19 -30"/>
+            <ComboBoxItem x:Name="_31to60" Content="31 - 60"/>
+            <ComboBoxItem x:Name="_61andabove" Content="61 - Above"/>
+        </ComboBox>
+        <ComboBox x:Name="q6" HorizontalAlignment="Left" Height="30" Margin="246,237,0,0" VerticalAlignment="Top" Width="139" RenderTransformOrigin="0.527,4.713" Grid.RowSpan="2">
+            <ComboBoxItem x:Name="Italian" Content="Italian" HorizontalAlignment="Left" Width="137"/>
+            <ComboBoxItem x:Name="Mexican" Content="Mexican"/>
+            <ComboBoxItem x:Name="Indian" Content="Indian"/>
+            <ComboBoxItem x:Name="Chinese" Content="Chinese"/>
         </ComboBox>
 
     </Grid>
