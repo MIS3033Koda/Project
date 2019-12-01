@@ -29,5 +29,20 @@ namespace PuppyQuiz
         {
 
         }
+
+        private void SubmitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            //declare variables
+
+
+
+            //logic
+            //--need json request - bitmapimage
+
+
+
+
+
+        }
     }
 }
