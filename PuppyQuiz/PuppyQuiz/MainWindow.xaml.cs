@@ -35,7 +35,7 @@ namespace PuppyQuiz
         private void SubmitBtn_Click(object sender, RoutedEventArgs e)
         {
             //declare variables
-            string puppy = string.Empty;
+            string puppy = "Husky";
 
             // if (RedRB.IsChecked)
 
@@ -45,33 +45,32 @@ namespace PuppyQuiz
             //    }
 
             //logic
-            //--need json request - bitmapimage
+            
             using (HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
 
                 if (response.IsSuccessStatusCode)
                 {
-                    //check input - string.Contains
-                    //If(UserInput == 
+                    
                     var content = response.Content.ReadAsStringAsync().Result;
                     var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
 
                   
 
                     //txtDogBreed.Text
-                    //BitmapImage dogImage = new BitmapImage();
-                    //dogImage.BeginInit();
-                    //dogImage.UriSource = new Uri(dogPicture.message);
-                    //dogImage.EndInit();
+                    BitmapImage dogImage = new BitmapImage();
+                    dogImage.BeginInit();
+                    dogImage.UriSource = new Uri(dogPicture.message);
+                    dogImage.EndInit();
 
-                    MessageBox.Show(dogPicture.message);
+                    //ListBoxName = dogPicture.message;
 
 
                 }
                 else
                 {
-                    
+                    MessageBox.Show("Error");
                 }
                 
 
