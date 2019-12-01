@@ -90,7 +90,7 @@ namespace PuppyQuiz
                 //cool wont load
                //?
 
-                
+                // did this work?
             }
             if ("adam" == NameTB.Text.ToLower())
             {
