@@ -99,19 +99,19 @@ namespace PuppyQuiz
             {
                 //get json puppy chihuahua
             }
-            else if (q4.SelectedItem == q4.Winter && q10.SelectedItem == q10.ParksAndRec)
+            else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
             {
                 //get json puppy husky
             }
-            else if (q4.SelectedItem == q4.Summer)
+            else if (q4.SelectedItem == Summer)
             {
                 //get json puppy golden retriever
             }
-            else if (q4.SelectedItem == q4.Fall)
+            else if (q4.SelectedItem == Fall)
             {
                 //get json puppy border collie
             }
-            else if (q3.SelectedItem == q3.giraffe)
+            else if (q3.SelectedItem == Giraffe)
             {
                 //get json puppy great dane
             }
