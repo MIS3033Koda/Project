@@ -92,7 +92,9 @@ namespace PuppyQuiz
         {
             if ("adam" == NameTB.Text.ToLower())
             {
-                //get json puppy sheepadoodle
+                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/sheepadoodle/images/random").Result;
+                MessageBox.Show(dogPicture.response);
+                
             }
             else if (q2.SelectedItem == q2.19-30 && q6.SelectedItem == q2.Mexican)
             {
