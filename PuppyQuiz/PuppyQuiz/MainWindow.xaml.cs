@@ -92,28 +92,28 @@ namespace PuppyQuiz
             }
             if ("adam" == NameTB.Text.ToLower())
             {
-                Puppy="sheepadoodle";
+                puppy="sheepadoodle";
                 
                 
             }
-            else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
+            else if (q5.SelectedItem == "19to30" && q6.SelectedItem == "Mexican")
             {
-                Puppy="chihuahua";
+                puppy="chihuahua";
                 //get json puppy chihuahua
             }
-            else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
+            else if (q4.SelectedItem == "Winter" && q10.SelectedItem == "ParksandRec")
             {
                 //get json puppy husky
             }
-            else if (q4.SelectedItem == Summer)
+            else if (q4.SelectedItem == "Summer")
             {
                 puppy
             }
-            else if (q4.SelectedItem == Fall)
+            else if (q4.SelectedItem == "Fall")
             {
                 //get json puppy border collie
             }
-            else if (q3.SelectedItem == Giraffe)
+            else if (q3.SelectedItem == "Giraffe")
             {
                 //get json puppy great dane
             }
