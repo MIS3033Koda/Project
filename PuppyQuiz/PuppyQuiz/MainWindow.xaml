@@ -32,18 +32,6 @@
         <Label x:Name="EigthQuestion" Content="What do you like to do on a rainy day?" HorizontalAlignment="Left" Height="30" Margin="54,74.2,0,0" VerticalAlignment="Top" Width="222" Grid.Row="1"/>
         <Label x:Name="NinethQuestion" Content="What is your eye color?" HorizontalAlignment="Left" Height="29" Margin="54,109.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1"/>
         <Label x:Name="TenthQuestion" Content="Which one is better?" HorizontalAlignment="Left" Height="34" Margin="54,138.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1"/>
-        <RadioButton x:Name="ItalianRB" Content="Italian " HorizontalAlignment="Left" Height="18" Margin="400,149,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="MexicanRB" Content="Mexican" HorizontalAlignment="Left" Height="18" Margin="508,149,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="IndianRB" Content="Indian" HorizontalAlignment="Left" Height="18" Margin="607,149,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="ChineseRB" Content="Chinese " HorizontalAlignment="Left" Height="18" Margin="701,149,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="CookiesnCreamRB" Content="Cookies n Cream" HorizontalAlignment="Left" Height="18" Margin="281,42.2,0,0" VerticalAlignment="Top" Width="118" Grid.Row="1"/>
-        <RadioButton x:Name="BirthdayCakeRB" Content="Birthday Cake" HorizontalAlignment="Left" Height="18" Margin="417,42.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton x:Name="NuttyRB" Content="Nutty" HorizontalAlignment="Left" Height="18" Margin="537,42.2,0,0" VerticalAlignment="Top" Width="94" Checked="RadioButton_Checked" Grid.Row="1"/>
-        <RadioButton x:Name="BoringRB" Content="Boring Vanilla or Choclate" HorizontalAlignment="Left" Height="18" Margin="616,42.2,0,0" VerticalAlignment="Top" Width="156" Grid.Row="1"/>
-        <RadioButton x:Name="SleepRB" Content="Sleep" HorizontalAlignment="Left" Height="18" Margin="281,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton x:Name="ReadRB" Content="Read" HorizontalAlignment="Left" Height="18" Margin="375,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton x:Name="ProgrammingRB" Content="Programming....Ew" HorizontalAlignment="Left" Height="18" Margin="453,75.8,0,0" VerticalAlignment="Top" Width="123" Grid.Row="1"/>
-        <RadioButton x:Name="PlayintherainRB" Content="Play in the rain" HorizontalAlignment="Left" Height="18" Margin="591,75.8,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.091,1.511" Grid.Row="1"/>
         <RadioButton x:Name="BlueRB" Content="Blue" HorizontalAlignment="Left" Height="18" Margin="226,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
         <RadioButton x:Name="GreenRB" Content="Green" HorizontalAlignment="Left" Height="18" Margin="320,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
         <RadioButton x:Name="BrownRB" Content="Brown" HorizontalAlignment="Left" Height="18" Margin="405,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
@@ -81,6 +69,18 @@
             <ComboBoxItem x:Name="Mexican" Content="Mexican"/>
             <ComboBoxItem x:Name="Indian" Content="Indian"/>
             <ComboBoxItem x:Name="Chinese" Content="Chinese"/>
+        </ComboBox>
+        <ComboBox x:Name="q7" HorizontalAlignment="Left" Height="30" Margin="275,38.8,0,0" VerticalAlignment="Top" Width="139" RenderTransformOrigin="0.527,4.713" Grid.Row="1">
+            <ComboBoxItem x:Name="CookiesnCream" Content="Cookies n Cream" HorizontalAlignment="Left" Width="137"/>
+            <ComboBoxItem x:Name="BirthdayCake" Content="Birthday Cake"/>
+            <ComboBoxItem x:Name="Nutty" Content="Nutty"/>
+            <ComboBoxItem x:Name="Boring" Content="Boring Vanilla or Chocolate"/>
+        </ComboBox>
+        <ComboBox x:Name="q8" HorizontalAlignment="Left" Height="30" Margin="281,73.8,0,0" VerticalAlignment="Top" Width="139" RenderTransformOrigin="0.527,4.713" Grid.Row="1">
+            <ComboBoxItem x:Name="Sleep" Content="Sleep" HorizontalAlignment="Left" Width="137"/>
+            <ComboBoxItem x:Name="Read" Content="Read"/>
+            <ComboBoxItem x:Name="Program" Content="Programming...Ew"/>
+            <ComboBoxItem x:Name="Play" Content="Play in the rain"/>
         </ComboBox>
 
     </Grid>
