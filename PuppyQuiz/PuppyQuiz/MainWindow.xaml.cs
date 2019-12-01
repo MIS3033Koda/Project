@@ -65,9 +65,9 @@ namespace PuppyQuiz
                 }
                 else
                 {
-                    MessageBox.Show("Error! Please enter a valid dog breed.");
+                    
                 }
-                txtUserDog.Text = string.Empty;
+                
 
 
 
