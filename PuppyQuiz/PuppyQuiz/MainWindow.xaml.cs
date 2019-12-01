@@ -1,6 +1,8 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -38,11 +40,38 @@ namespace PuppyQuiz
 
             //logic
             //--need json request - bitmapimage
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{txtUserDog.Text}/images/random").Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+                    //check input - string.Contains
+                    //If(UserInput == 
+                    var content = response.Content.ReadAsStringAsync().Result;
+                    var dogPicture = JsonConvert.DeserializeObject<DogBreed>(content);
+
+                  
+
+                    //txtDogBreed.Text
+                    BitmapImage dogImage = new BitmapImage();
+                    dogImage.BeginInit();
+                    dogImage.UriSource = new Uri(dogPicture.message);
+                    dogImage.EndInit();
+
+                    imgDog.Source = dogImage;
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Error! Please enter a valid dog breed.");
+                }
+                txtUserDog.Text = string.Empty;
 
 
 
 
-
-        }
+            }
     }
 }
