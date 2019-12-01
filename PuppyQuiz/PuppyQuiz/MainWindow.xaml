@@ -55,7 +55,7 @@
         <RadioButton x:Name="CookiesnCreamRB" Content="Cookies n Cream" HorizontalAlignment="Left" Height="18" Margin="281,42.2,0,0" VerticalAlignment="Top" Width="118" Grid.Row="1"/>
         <RadioButton x:Name="BirthdayCakeRB" Content="Birthday Cake" HorizontalAlignment="Left" Height="18" Margin="417,42.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
         <RadioButton x:Name="NuttyRB" Content="Nutty" HorizontalAlignment="Left" Height="18" Margin="537,42.2,0,0" VerticalAlignment="Top" Width="94" Checked="RadioButton_Checked" Grid.Row="1"/>
-        <RadioButton x:Name="BoringRB" Content="Boring Vanilla or Choclate" HorizontalAlignment="Left" Height="18" Margin="616,42.2,0,0" VerticalAlignment="Top" Width="156" Grid.Row="1"/>
+        <RadioButton x:Name="BoringRB" Content="Boring Vanilla or Choclate" HorizontalAlignment="Left" Height="18" Margin="606,41.8,0,0" VerticalAlignment="Top" Width="156" Grid.Row="1"/>
         <RadioButton x:Name="SleepRB" Content="Sleep" HorizontalAlignment="Left" Height="18" Margin="281,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
         <RadioButton x:Name="ReadRB" Content="Read" HorizontalAlignment="Left" Height="18" Margin="375,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
         <RadioButton x:Name="ProgrammingRB" Content="Programming....Ew" HorizontalAlignment="Left" Height="18" Margin="453,75.8,0,0" VerticalAlignment="Top" Width="123" Grid.Row="1"/>
