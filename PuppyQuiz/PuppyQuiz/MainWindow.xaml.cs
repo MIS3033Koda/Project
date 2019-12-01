@@ -72,7 +72,7 @@ namespace PuppyQuiz
                     dogImage.UriSource = new Uri(dogPicture.message);
                     dogImage.EndInit();
 
-                    //ListBoxName = dogPicture.message;
+                    //ImageName = dogPicture.message;
 
 
                 }
@@ -89,9 +89,13 @@ namespace PuppyQuiz
         }
         private void SubmitBtn_Click_1(object sender, RoutedEventArgs e)
         {
+            using (HttpClient client = new HttpClient())
+            {
+                string puppy = string.Empty;
+
             if ("adam" == NameTB.Text.ToLower())
             {
-                //get json puppy sheepadoodle
+                    puppy = "sheepadoodle";
             }
             else if (q2.SelectedItem == q2.19-30 && q6.SelectedItem == q2.Mexican)
             {
@@ -116,6 +120,51 @@ namespace PuppyQuiz
             else
             {
                 //get json puppy labrador retriever
+            }
+
+            //declare variables
+            string puppy = string.Empty;
+
+
+
+            // if (RedRB.IsChecked)
+
+            //    {
+            //      exit = true;
+            //       MessageBoxImage.Show
+            //    }
+
+            //logic
+
+            
+                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
+
+                if (response.IsSuccessStatusCode)
+                {
+
+                    var content = response.Content.ReadAsStringAsync().Result;
+                    var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
+
+
+
+
+                    BitmapImage dogImage = new BitmapImage();
+                    dogImage.BeginInit();
+                    dogImage.UriSource = new Uri(dogPicture.message);
+                    dogImage.EndInit();
+
+                    //ImageName = dogPicture.message;
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+
+
+
+
             }
         }
 
