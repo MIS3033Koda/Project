@@ -36,7 +36,12 @@ namespace PuppyQuiz
         {
             //declare variables
 
+            // if (RedRB.IsChecked)
 
+            //    {
+            //      exit = true;
+           //       MessageBoxImage.Show
+            //    }
 
             //logic
             //--need json request - bitmapimage
@@ -75,3 +80,4 @@ namespace PuppyQuiz
             }
     }
 }
+    }

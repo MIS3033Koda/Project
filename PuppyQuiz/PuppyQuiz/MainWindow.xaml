@@ -14,9 +14,9 @@
         <TextBox x:Name="NameTB" HorizontalAlignment="Left" Height="30" Margin="246,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
         <Label x:Name="FirstQuestion" Content="What is your first name?" HorizontalAlignment="Left" Height="34" Margin="54,42,0,0" VerticalAlignment="Top" Width="171"/>
         <Label x:Name="SecondQuestion" Content="What is your favorite color?" HorizontalAlignment="Left" Height="31" Margin="54,80,0,0" VerticalAlignment="Top" Width="160"/>
-        <RadioButton x:Name="BlueRB" Content="Blue" HorizontalAlignment="Left" Height="18" Margin="246,86,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton x:Name="TurquoiseRB" Content="Turquoise" HorizontalAlignment="Left" Height="18" Margin="246,86,0,0" VerticalAlignment="Top" Width="94"/>
         <RadioButton x:Name="RedRB" Content="Red" HorizontalAlignment="Left" Height="18" Margin="354,86,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="GreenRB" Content="Green" HorizontalAlignment="Left" Height="18" Margin="453,86,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton x:Name="EvergreenRB" Content="Evergreen" HorizontalAlignment="Left" Height="18" Margin="453,86,0,0" VerticalAlignment="Top" Width="94"/>
         <RadioButton x:Name="PurpleRB" Content="Purple" HorizontalAlignment="Left" Height="18" Margin="547,86,0,0" VerticalAlignment="Top" Width="94"/>
         <Label Content="What is your favorite animal?" HorizontalAlignment="Left" Height="32" Margin="54,120,0,0" VerticalAlignment="Top" Width="171"/>
         <RadioButton x:Name="GiraffeRB" Content="Giraffe" HorizontalAlignment="Left" Height="18" Margin="246,126,0,0" VerticalAlignment="Top" Width="94"/>
@@ -45,28 +45,28 @@
         <Label x:Name="NinethQuestion" Content="What is your eye color?" HorizontalAlignment="Left" Height="29" Margin="54,109.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1"/>
         <Label x:Name="TenthQuestion" Content="Which one is better?" HorizontalAlignment="Left" Height="34" Margin="54,138.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1"/>
         <RadioButton x:Name="_0to18RB" Content="0 - 18" HorizontalAlignment="Left" Height="18" Margin="246,206,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton Content="19 - 30" HorizontalAlignment="Left" Height="18" Margin="354,206,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton Content="31 - 60" HorizontalAlignment="Left" Height="18" Margin="453,206,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton Content="61 - Above" HorizontalAlignment="Left" Height="18" Margin="547,206,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton Content="Italian " HorizontalAlignment="Left" Height="18" Margin="246,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Mexican" HorizontalAlignment="Left" Height="18" Margin="354,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Indian" HorizontalAlignment="Left" Height="18" Margin="453,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Chinese " HorizontalAlignment="Left" Height="18" Margin="547,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Cookies n Cream" HorizontalAlignment="Left" Height="18" Margin="281,42.2,0,0" VerticalAlignment="Top" Width="118" Grid.Row="1"/>
-        <RadioButton Content="Birthday Cake" HorizontalAlignment="Left" Height="18" Margin="417,42.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Nutty" HorizontalAlignment="Left" Height="18" Margin="537,42.2,0,0" VerticalAlignment="Top" Width="94" Checked="RadioButton_Checked" Grid.Row="1"/>
-        <RadioButton Content="Boring Vanilla or Choclate" HorizontalAlignment="Left" Height="18" Margin="616,42.2,0,0" VerticalAlignment="Top" Width="156" Grid.Row="1"/>
-        <RadioButton Content="Sleep" HorizontalAlignment="Left" Height="18" Margin="281,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Read" HorizontalAlignment="Left" Height="18" Margin="375,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Program....Ew" HorizontalAlignment="Left" Height="18" Margin="453,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Play in the rain" HorizontalAlignment="Left" Height="18" Margin="581,76.2,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.091,1.511" Grid.Row="1"/>
-        <RadioButton Content="Blue" HorizontalAlignment="Left" Height="18" Margin="226,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Green" HorizontalAlignment="Left" Height="18" Margin="320,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Brown" HorizontalAlignment="Left" Height="18" Margin="405,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Hazel" HorizontalAlignment="Left" Height="18" Margin="499,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="The Office" HorizontalAlignment="Left" Height="18" Margin="226,144.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <RadioButton Content="Parks and Rec" HorizontalAlignment="Left" Height="18" Margin="334,144.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
-        <Button x:Name="SubmitBtn" Content="Get My Results" HorizontalAlignment="Left" Height="32" Margin="535,144.2,0,0" VerticalAlignment="Top" Width="171" Grid.Row="1" Click="SubmitBtn_Click"/>
+        <RadioButton x:Name="_19to30RB" Content="19 - 30" HorizontalAlignment="Left" Height="18" Margin="354,206,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton x:Name="_31to60RB" Content="31 - 60" HorizontalAlignment="Left" Height="18" Margin="453,206,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton x:Name="_61toAboveRB" Content="61 - Above" HorizontalAlignment="Left" Height="18" Margin="547,206,0,0" VerticalAlignment="Top" Width="94"/>
+        <RadioButton x:Name="ItalianRB" Content="Italian " HorizontalAlignment="Left" Height="18" Margin="246,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="MexicanRB" Content="Mexican" HorizontalAlignment="Left" Height="18" Margin="354,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="IndianRB" Content="Indian" HorizontalAlignment="Left" Height="18" Margin="453,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="ChineseRB" Content="Chinese " HorizontalAlignment="Left" Height="18" Margin="547,3.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="CookiesnCreamRB" Content="Cookies n Cream" HorizontalAlignment="Left" Height="18" Margin="281,42.2,0,0" VerticalAlignment="Top" Width="118" Grid.Row="1"/>
+        <RadioButton x:Name="BirthdayCakeRB" Content="Birthday Cake" HorizontalAlignment="Left" Height="18" Margin="417,42.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="NuttyRB" Content="Nutty" HorizontalAlignment="Left" Height="18" Margin="537,42.2,0,0" VerticalAlignment="Top" Width="94" Checked="RadioButton_Checked" Grid.Row="1"/>
+        <RadioButton x:Name="BoringRB" Content="Boring Vanilla or Choclate" HorizontalAlignment="Left" Height="18" Margin="616,42.2,0,0" VerticalAlignment="Top" Width="156" Grid.Row="1"/>
+        <RadioButton x:Name="SleepRB" Content="Sleep" HorizontalAlignment="Left" Height="18" Margin="281,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="ReadRB" Content="Read" HorizontalAlignment="Left" Height="18" Margin="375,76.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="ProgrammingRB" Content="Programming....Ew" HorizontalAlignment="Left" Height="18" Margin="453,75.8,0,0" VerticalAlignment="Top" Width="123" Grid.Row="1"/>
+        <RadioButton x:Name="PlayintherainRB" Content="Play in the rain" HorizontalAlignment="Left" Height="18" Margin="591,75.8,0,0" VerticalAlignment="Top" Width="101" RenderTransformOrigin="0.091,1.511" Grid.Row="1"/>
+        <RadioButton x:Name="BlueRB" Content="Blue" HorizontalAlignment="Left" Height="18" Margin="226,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="GreenRB" Content="Green" HorizontalAlignment="Left" Height="18" Margin="320,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="BrownRB" Content="Brown" HorizontalAlignment="Left" Height="18" Margin="405,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="HazelRB" Content="Hazel" HorizontalAlignment="Left" Height="18" Margin="499,115.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="TheOfficeRB" Content="The Office" HorizontalAlignment="Left" Height="18" Margin="226,144.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <RadioButton x:Name="ParksandRecRB" Content="Parks and Rec" HorizontalAlignment="Left" Height="18" Margin="334,144.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
+        <Button x:Name="SubmitBtn" Content="Get My Results" HorizontalAlignment="Left" Height="32" Margin="535,144.2,0,0" VerticalAlignment="Top" Width="171" Grid.Row="1"/>
         <Label x:Name="QuizLbl" Content="Puppy Quiz: What puppy are you?" HorizontalAlignment="Left" Height="32" Margin="281,5,0,0" VerticalAlignment="Top" Width="203"/>
 
     </Grid>
