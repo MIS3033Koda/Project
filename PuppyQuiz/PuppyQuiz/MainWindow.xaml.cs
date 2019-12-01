@@ -41,7 +41,7 @@ namespace PuppyQuiz
  //
  //           
             //declare variables
-            string puppy = string.Empty;
+           
 
 
 
@@ -54,19 +54,26 @@ namespace PuppyQuiz
 
             //logic
             
+           
+
+        }
+        private void SubmitBtn_Click_1(object sender, RoutedEventArgs e)
+        {
+            string puppy = string.Empty;
+
             using (HttpClient client = new HttpClient())
             {
                 HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
 
                 if (response.IsSuccessStatusCode)
                 {
-                    
+
                     var content = response.Content.ReadAsStringAsync().Result;
                     var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
 
 
 
-                    
+
                     BitmapImage dogImage = new BitmapImage();
                     dogImage.BeginInit();
                     dogImage.UriSource = new Uri(dogPicture.message);
@@ -80,15 +87,9 @@ namespace PuppyQuiz
                 {
                     MessageBox.Show("Error");
                 }
+
                 
-
-
-
             }
-
-        }
-        private void SubmitBtn_Click_1(object sender, RoutedEventArgs e)
-        {
             if ("adam" == NameTB.Text.ToLower())
             {
                 Puppy=
@@ -119,6 +120,8 @@ namespace PuppyQuiz
             {
                 //get json puppy labrador retriever
             }
+
+
         }
 
     }
