@@ -93,6 +93,7 @@ namespace PuppyQuiz
             if ("adam" == NameTB.Text.ToLower())
             {
                 Puppy="sheepadoodle";
+                //get json sheepadoodle
                 
                 
             }
@@ -108,6 +109,7 @@ namespace PuppyQuiz
             else if (q4.SelectedItem == Summer)
             {
                 puppy
+                    //get json golden retriever 
             }
             else if (q4.SelectedItem == Fall)
             {
