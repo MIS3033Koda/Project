@@ -108,7 +108,7 @@ namespace PuppyQuiz
             }
             else if (q4.SelectedItem == Summer)
             {
-                puppy
+                puppy 
                     //get json golden retriever 
             }
             else if (q4.SelectedItem == Fall)
