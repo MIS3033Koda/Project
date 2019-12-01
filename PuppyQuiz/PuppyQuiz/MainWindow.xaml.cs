@@ -35,6 +35,7 @@ namespace PuppyQuiz
         private void SubmitBtn_Click(object sender, RoutedEventArgs e)
         {
             //declare variables
+            string puppy = string.Empty;
 
             // if (RedRB.IsChecked)
 
@@ -47,7 +48,7 @@ namespace PuppyQuiz
             //--need json request - bitmapimage
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{txtUserDog.Text}/images/random").Result;
+                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
 
                 if (response.IsSuccessStatusCode)
                 {
