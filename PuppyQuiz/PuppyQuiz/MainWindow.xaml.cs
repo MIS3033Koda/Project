@@ -36,7 +36,7 @@ namespace PuppyQuiz
         {
             //declare variables
 
-            // if (RedRB.IsChosen)
+            // if (RedRB.IsChecked)
 
             //    {
             //      exit = true;
@@ -80,3 +80,4 @@ namespace PuppyQuiz
             }
     }
 }
+    }
