@@ -68,7 +68,7 @@ namespace PuppyQuiz
 
             
             
-            if ("adam" == NameTB.Text)
+            if ("adam" == NameTB.Text.ToLower())
             {
                 puppy="sheepadoodle";
                 
