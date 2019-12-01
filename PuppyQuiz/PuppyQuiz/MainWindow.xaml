@@ -68,7 +68,7 @@
         <RadioButton x:Name="ParksandRecRB" Content="Parks and Rec" HorizontalAlignment="Left" Height="18" Margin="334,144.2,0,0" VerticalAlignment="Top" Width="94" Grid.Row="1"/>
         <Button x:Name="SubmitBtn" Content="Get My Results" HorizontalAlignment="Left" Height="32" Margin="535,144.2,0,0" VerticalAlignment="Top" Width="171" Grid.Row="1" Click="SubmitBtn_Click_1"/>
         <Label x:Name="QuizLbl" Content="Puppy Quiz: What puppy are you?" HorizontalAlignment="Left" Height="32" Margin="281,5,0,0" VerticalAlignment="Top" Width="203"/>
-        <ComboBox HorizontalAlignment="Left" Height="30" Margin="246,84,0,0" VerticalAlignment="Top" Width="139">
+        <ComboBox Height="30" Margin="0,84,409.8,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="139">
             <ComboBoxItem Content="ComboBoxItem" HorizontalAlignment="Left" Width="137"/>
         </ComboBox>
 
