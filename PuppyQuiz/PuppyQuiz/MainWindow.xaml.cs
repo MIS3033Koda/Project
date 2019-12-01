@@ -36,7 +36,12 @@ namespace PuppyQuiz
         {
             //declare variables
 
+            // if (RedRB.IsChosen)
 
+            //    {
+            //      exit = true;
+           //       MessageBoxImage.Show
+            //    }
 
             //logic
             //--need json request - bitmapimage
