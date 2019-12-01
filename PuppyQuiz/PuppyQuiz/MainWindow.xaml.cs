@@ -49,17 +49,17 @@ namespace PuppyQuiz
                     //check input - string.Contains
                     //If(UserInput == 
                     var content = response.Content.ReadAsStringAsync().Result;
-                    var dogPicture = JsonConvert.DeserializeObject<DogBreed>(content);
+                    var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
 
                   
 
                     //txtDogBreed.Text
-                    BitmapImage dogImage = new BitmapImage();
-                    dogImage.BeginInit();
-                    dogImage.UriSource = new Uri(dogPicture.message);
-                    dogImage.EndInit();
+                    //BitmapImage dogImage = new BitmapImage();
+                    //dogImage.BeginInit();
+                    //dogImage.UriSource = new Uri(dogPicture.message);
+                    //dogImage.EndInit();
 
-                    imgDog.Source = dogImage;
+                    MessageBox.Show(dogPicture.message);
 
 
                 }
