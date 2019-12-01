@@ -110,7 +110,7 @@ namespace PuppyQuiz
             }
             else if (q4.SelectedItem == Summer)
             {
-                puppy="golden retriever";
+                puppy="goldenretriever";
             }
             else if (q4.SelectedItem == Fall)
             {
