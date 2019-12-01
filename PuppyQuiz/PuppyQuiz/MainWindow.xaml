@@ -86,6 +86,7 @@
             <ComboBoxItem x:Name="TheOffice" Content="The Office" HorizontalAlignment="Left" Width="137"/>
             <ComboBoxItem x:Name="ParksandRec" Content="Parks and Rec"/>
         </ComboBox>
+        <Image x:Name="DogImage" HorizontalAlignment="Left" Height="171" Margin="432,84,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="304"/>
 
     </Grid>
 </Window>
