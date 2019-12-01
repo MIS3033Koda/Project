@@ -79,7 +79,7 @@ namespace PuppyQuiz
                     dogImage.UriSource = new Uri(dogPicture.message);
                     dogImage.EndInit();
 
-                    //ListBoxName = dogPicture.message;
+                    DogImage.Source = dogImage;
 
 
                 }
