@@ -58,11 +58,17 @@ namespace PuppyQuiz
 
         }
         private void SubmitBtn_Click_1(object sender, RoutedEventArgs e)
+
         {
             string puppy = string.Empty;
+            using (HttpClient client = new HttpClient())
+            {
+                
+              
 
             
-            if ("adam" == NameTB.Text.ToLower())
+            
+            if ("adam" == NameTB.Text)
             {
                 puppy="sheepadoodle";
                 
@@ -97,8 +103,7 @@ namespace PuppyQuiz
                 puppy="labradorretriever";
                 //get json puppy lab
             }
-            using (HttpClient client = new HttpClient())
-            {
+
                 HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
 
                 if (response.IsSuccessStatusCode)
