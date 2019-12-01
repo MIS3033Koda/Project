@@ -41,7 +41,7 @@ namespace PuppyQuiz
  //
  //           
             //declare variables
-            string puppy = string.Empty;
+           
 
 
 
@@ -54,89 +54,15 @@ namespace PuppyQuiz
 
             //logic
             
-            using (HttpClient client = new HttpClient())
-            {
-                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
-
-                if (response.IsSuccessStatusCode)
-                {
-                    
-                    var content = response.Content.ReadAsStringAsync().Result;
-                    var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
-
-
-
-                    
-                    BitmapImage dogImage = new BitmapImage();
-                    dogImage.BeginInit();
-                    dogImage.UriSource = new Uri(dogPicture.message);
-                    dogImage.EndInit();
-
-                    //ImageName = dogPicture.message;
-
-
-                }
-                else
-                {
-                    MessageBox.Show("Error");
-                }
-                
-
-
-
-            }
+           
 
         }
         private void SubmitBtn_Click_1(object sender, RoutedEventArgs e)
         {
-            using (HttpClient client = new HttpClient())
-            {
-                string puppy = string.Empty;
-
-            if ("adam" == NameTB.Text.ToLower())
-            {
-                    puppy = "sheepadoodle";
-            }
-            else if (q2.SelectedItem == q2.19-30 && q6.SelectedItem == q2.Mexican)
-            {
-                    puppy = "chihuahua";
-            }
-            else if (q4.SelectedItem == q4.Winter && q10.SelectedItem == q10.ParksAndRec)
-            {
-                    puppy = "husky";
-            }
-            else if (q4.SelectedItem == q4.Summer)
-            {
-                    puppy = "goldenretriever";
-            }
-            else if (q4.SelectedItem == q4.Fall)
-            {
-                    puppy = "bordercollie";
-            }
-            else if (q3.SelectedItem == q3.giraffe)
-            {
-                    puppy = "greatdane";
-            }
-            else
-            {
-                //get json puppy labrador retriever
-            }
-
-            //declare variables
             string puppy = string.Empty;
 
-
-
-            // if (RedRB.IsChecked)
-
-            //    {
-            //      exit = true;
-            //       MessageBoxImage.Show
-            //    }
-
-            //logic
-
-            
+            using (HttpClient client = new HttpClient())
+            {
                 HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
 
                 if (response.IsSuccessStatusCode)
@@ -153,7 +79,7 @@ namespace PuppyQuiz
                     dogImage.UriSource = new Uri(dogPicture.message);
                     dogImage.EndInit();
 
-                    //ImageName = dogPicture.message;
+                    //ListBoxName = dogPicture.message;
 
 
                 }
@@ -162,10 +88,40 @@ namespace PuppyQuiz
                     MessageBox.Show("Error");
                 }
 
-
-
-
+                
             }
+            if ("adam" == NameTB.Text.ToLower())
+            {
+                Puppy=
+                
+                
+            }
+            else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
+            {
+                //get json puppy chihuahua
+            }
+            else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
+            {
+                //get json puppy husky
+            }
+            else if (q4.SelectedItem == Summer)
+            {
+                puppy
+            }
+            else if (q4.SelectedItem == Fall)
+            {
+                //get json puppy border collie
+            }
+            else if (q3.SelectedItem == Giraffe)
+            {
+                //get json puppy great dane
+            }
+            else
+            {
+                puppy="labradorretriever";
+            }
+
+
         }
 
     }
