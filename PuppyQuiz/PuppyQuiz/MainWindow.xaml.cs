@@ -87,13 +87,11 @@ namespace PuppyQuiz
                 {
                     MessageBox.Show("Error");
                 }
-
-                
+            
             }
             if ("adam" == NameTB.Text.ToLower())
             {
                 puppy="sheepadoodle";
-                //get json sheepadoodle
                 
                 
             }
@@ -104,24 +102,27 @@ namespace PuppyQuiz
             }
             else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
             {
+                puppy="husky";
                 //get json puppy husky
             }
             else if (q4.SelectedItem == Summer)
             {
-                puppy 
-                    //get json golden retriever 
+                puppy="goldenretriever";
             }
             else if (q4.SelectedItem == Fall)
             {
+                puppy="bordercollie";
                 //get json puppy border collie
             }
             else if (q3.SelectedItem == Giraffe)
             {
+                puppy="greatdane";
                 //get json puppy great dane
             }
             else
             {
                 puppy="labradorretriever";
+                //get json puppy lab
             }
 
 
