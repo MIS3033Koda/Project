@@ -61,34 +61,7 @@ namespace PuppyQuiz
         {
             string puppy = string.Empty;
 
-            using (HttpClient client = new HttpClient())
-            {
-                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
-
-                if (response.IsSuccessStatusCode)
-                {
-
-                    var content = response.Content.ReadAsStringAsync().Result;
-                    var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
-
-
-
-
-                    BitmapImage dogImage = new BitmapImage();
-                    dogImage.BeginInit();
-                    dogImage.UriSource = new Uri(dogPicture.message);
-                    dogImage.EndInit();
-
-                    DogImage.Source = dogImage;
-
-
-                }
-                else
-                {
-                    MessageBox.Show("Error");
-                }
             
-            }
             if ("adam" == NameTB.Text.ToLower())
             {
                 puppy="sheepadoodle";
@@ -124,7 +97,34 @@ namespace PuppyQuiz
                 puppy="labradorretriever";
                 //get json puppy lab
             }
+            using (HttpClient client = new HttpClient())
+            {
+                HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
 
+                if (response.IsSuccessStatusCode)
+                {
+
+                    var content = response.Content.ReadAsStringAsync().Result;
+                    var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
+
+
+
+
+                    BitmapImage dogImage = new BitmapImage();
+                    dogImage.BeginInit();
+                    dogImage.UriSource = new Uri(dogPicture.message);
+                    dogImage.EndInit();
+
+                    DogImage.Source = dogImage;
+
+
+                }
+                else
+                {
+                    MessageBox.Show("Error");
+                }
+
+            }
 
         }
 
