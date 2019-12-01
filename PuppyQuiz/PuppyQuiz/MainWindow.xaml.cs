@@ -95,7 +95,7 @@ namespace PuppyQuiz
                 
                 
             }
-            else if (q5.SelectedItem == 19to30 && q6.SelectedItem == Mexican)
+            else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
             {
                 puppy="chihuahua";
                 //get json puppy chihuahua
