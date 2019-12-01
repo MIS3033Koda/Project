@@ -41,7 +41,7 @@ namespace PuppyQuiz
  //
  //           
             //declare variables
-            string puppy = "Husky";
+            string puppy = string.Empty;
 
 
 
@@ -66,7 +66,7 @@ namespace PuppyQuiz
 
 
 
-                    //txtDogBreed.Text
+                    
                     BitmapImage dogImage = new BitmapImage();
                     dogImage.BeginInit();
                     dogImage.UriSource = new Uri(dogPicture.message);
