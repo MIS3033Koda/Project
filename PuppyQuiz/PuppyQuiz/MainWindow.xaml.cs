@@ -99,23 +99,23 @@ namespace PuppyQuiz
             }
             else if (q2.SelectedItem == q2.19-30 && q6.SelectedItem == q2.Mexican)
             {
-                //get json puppy chihuahua
+                    puppy = "chihuahua";
             }
             else if (q4.SelectedItem == q4.Winter && q10.SelectedItem == q10.ParksAndRec)
             {
-                //get json puppy husky
+                    puppy = "husky";
             }
             else if (q4.SelectedItem == q4.Summer)
             {
-                //get json puppy golden retriever
+                    puppy = "goldenretriever";
             }
             else if (q4.SelectedItem == q4.Fall)
             {
-                //get json puppy border collie
+                    puppy = "bordercollie";
             }
             else if (q3.SelectedItem == q3.giraffe)
             {
-                //get json puppy great dane
+                    puppy = "greatdane";
             }
             else
             {
