@@ -70,7 +70,7 @@ namespace PuppyQuiz
             
             if ("adam" == NameTB.Text.ToLower())
             {
-                puppy="sheepadoodle";
+                puppy="englishsheepdog";
                 
                 
             }
@@ -100,7 +100,7 @@ namespace PuppyQuiz
             }
             else
             {
-                puppy="labradorretriever";
+                puppy="labrador";
                 //get json puppy lab
             }
 
