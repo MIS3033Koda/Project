@@ -87,7 +87,7 @@ namespace PuppyQuiz
             {
 
             }
-            else if (_19to30RB.IsPressed && MexicanRB.IsPressed)
+            else if ()
             {
 
             }
