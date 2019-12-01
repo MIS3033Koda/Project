@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,31,0,0" TextWrapping="Wrap" Text="1." VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,69,0,0" TextWrapping="Wrap" Text="2." VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,109,0,0" TextWrapping="Wrap" Text="3." VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,150,0,0" TextWrapping="Wrap" Text="4." VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.608,4.982"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,189,0,0" TextWrapping="Wrap" Text="5." VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.642,1.273"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,232,0,0" TextWrapping="Wrap" Text="6." VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,273,0,0" TextWrapping="Wrap" Text="7." VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,317,0,0" TextWrapping="Wrap" Text="8." VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,355,0,0" TextWrapping="Wrap" Text="9." VerticalAlignment="Top" Width="24"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="10,391,0,0" TextWrapping="Wrap" Text="10." VerticalAlignment="Top" Width="24"/>
+
     </Grid>
 </Window>
