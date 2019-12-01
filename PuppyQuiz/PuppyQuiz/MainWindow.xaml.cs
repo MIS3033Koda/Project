@@ -85,12 +85,13 @@ namespace PuppyQuiz
         {
             if ("adam" == NameTB.Text.ToLower())
             {
-
+                //get json puppy sheepadoodle
             }
-            else if ()
+            else if (q2.SelectedItem == q2.19-30 && q6.SelectedItem == q2.Mexican)
             {
-
+                //get json puppy chihuahua
             }
+            else if (question)
         }
 
     }
