@@ -87,10 +87,7 @@ namespace PuppyQuiz
                 {
                     MessageBox.Show("Error");
                 }
-                //cool wont load
-               //?
-
-                // did this work?
+            
             }
             if ("adam" == NameTB.Text.ToLower())
             {
