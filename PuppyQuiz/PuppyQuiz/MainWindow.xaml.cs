@@ -34,8 +34,16 @@ namespace PuppyQuiz
 
         private void SubmitBtn_Click(object sender, RoutedEventArgs e)
         {
+           
+ //    if (FirstQuestion.IsPressed)
+ //               {
+ //  }               MessageBoxImage.Show();
+ //
+ //           
             //declare variables
             string puppy = string.Empty;
+
+
 
             // if (RedRB.IsChecked)
 
@@ -74,7 +82,6 @@ namespace PuppyQuiz
                     
                 }
                 
-
 
 
 
