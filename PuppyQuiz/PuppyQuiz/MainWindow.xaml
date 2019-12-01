@@ -15,15 +15,7 @@
         <Label x:Name="FirstQuestion" Content="What is your first name?" HorizontalAlignment="Left" Height="34" Margin="54,42,0,0" VerticalAlignment="Top" Width="171"/>
         <Label x:Name="SecondQuestion" Content="What is your favorite color?" HorizontalAlignment="Left" Height="31" Margin="54,80,0,0" VerticalAlignment="Top" Width="160"/>
         <Label Content="What is your favorite animal?" HorizontalAlignment="Left" Height="32" Margin="54,120,0,0" VerticalAlignment="Top" Width="171"/>
-        <RadioButton x:Name="GiraffeRB" Content="Giraffe" HorizontalAlignment="Left" Height="18" Margin="400,99,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="ElephantRB" Content="Elephant" HorizontalAlignment="Left" Height="18" Margin="508,99,0,0" VerticalAlignment="Top" Width="94" RenderTransformOrigin="-0.032,0.644"/>
-        <RadioButton x:Name="LionRB" Content="Lion" HorizontalAlignment="Left" Height="18" Margin="607,99,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="PenguinRB" Content="Penguin" HorizontalAlignment="Left" Height="18" Margin="701,99,0,0" VerticalAlignment="Top" Width="94"/>
         <Label x:Name="FourthQuestion" Content="What is your favorite season?" HorizontalAlignment="Left" Height="30" Margin="54,161,0,0" VerticalAlignment="Top" Width="171"/>
-        <RadioButton x:Name="WinterRB" Content="Winter" HorizontalAlignment="Left" Height="18" Margin="246,167,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="SpringRB" Content="Spring" HorizontalAlignment="Left" Height="18" Margin="354,167,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="SummerRB" Content="Summer" HorizontalAlignment="Left" Height="18" Margin="453,167,0,0" VerticalAlignment="Top" Width="94"/>
-        <RadioButton x:Name="FallRB" Content="Fall" HorizontalAlignment="Left" Height="18" Margin="547,167,0,0" VerticalAlignment="Top" Width="94"/>
         <Label x:Name="SixthQuestion" Content="What is your favorite food?" HorizontalAlignment="Left" Height="30" Margin="54,234,0,0" VerticalAlignment="Top" Width="160" Grid.RowSpan="2"/>
         <Label Content="1." HorizontalAlignment="Left" Height="34" Margin="12,42,0,0" VerticalAlignment="Top" Width="24"/>
         <Label Content="2." HorizontalAlignment="Left" Height="34" Margin="12,80,0,0" VerticalAlignment="Top" Width="24"/>
@@ -75,6 +67,12 @@
             <ComboBoxItem x:Name="Elephant" Content="Elephant"/>
             <ComboBoxItem x:Name="Lion" Content="Lion"/>
             <ComboBoxItem x:Name="Penguin" Content="Penguin"/>
+        </ComboBox>
+        <ComboBox x:Name="q4" HorizontalAlignment="Left" Height="30" Margin="246,163,0,0" VerticalAlignment="Top" Width="139">
+            <ComboBoxItem x:Name="Winter" Content="Winter" HorizontalAlignment="Left" Width="137"/>
+            <ComboBoxItem x:Name="Spring" Content="Spring"/>
+            <ComboBoxItem x:Name="Summer" Content="Summer"/>
+            <ComboBoxItem x:Name="Fall" Content="Fall"/>
         </ComboBox>
 
     </Grid>
