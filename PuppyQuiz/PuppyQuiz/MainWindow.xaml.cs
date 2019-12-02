@@ -52,50 +52,43 @@ namespace PuppyQuiz
                   
                     puppy = "sheepdog";
                     //get json puppy sheepdog
-                    DogLB.Items.Add("Sheepdog");
-                    //shows the name Sheepdog
+                    
 
                 }
                 else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
                 {
                     puppy = "chihuahua";
-                    DogLB.Items.Add("Chihuahua");
-                    //get json puppy chihuahua
+                   
                 }
                 else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
                 {
                     puppy = "husky";
                     //get json puppy husky
-                    DogLB.Items.Add("Husky");
-                    //shows the name Husky
+                 
                 }
                 else if (q4.SelectedItem == Summer)
                 {
                     puppy = "retriever";
                     //get json puppy retriever
-                    DogLB.Items.Add("Retriever");
-                    //shows the name Golden Retriever
+                  
                 }
                 else if (q4.SelectedItem == Fall)
                 {
                     puppy = "collie";
                     //get json puppy collie
-                    DogLB.Items.Add("Collie");
-                    //shows the name collie
+                 
                 }
                 else if (q3.SelectedItem == Giraffe)
                 {
                     puppy = "dane";
                     //get json puppy great dane
-                    DogLB.Items.Add("Great Dane");
-                    //shows the name great dane
+                    
                 }
                 else
                 {
                     puppy = "labrador";
                     //get json puppy labrador
-                    DogLB.Items.Add("Labrador");
-                    //shows the name labrador
+                    
                 }
 
                 HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
@@ -123,7 +116,7 @@ namespace PuppyQuiz
 
 
             }
-            DogLB.Items.Clear();
+          
             NameTB.Clear();
             q2.Text = "";
             q3.Text = "";
@@ -134,6 +127,7 @@ namespace PuppyQuiz
             q8.Text = "";
             q9.Text = "";
             q10.Text = "";
+            
 
         }
 
