@@ -125,6 +125,15 @@ namespace PuppyQuiz
             }
             DogLB.Items.Clear();
             NameTB.Clear();
+            q2.Text = "";
+            q3.Text = "";
+            q4.Text = "";
+            q5.Text = "";
+            q6.Text = "";
+            q7.Text = "";
+            q8.Text = "";
+            q9.Text = "";
+            q10.Text = "";
 
         }
 
