@@ -35,90 +35,76 @@ namespace PuppyQuiz
         private void SubmitBtn_Click(object sender, RoutedEventArgs e)
         {
            
- //    if (FirstQuestion.IsPressed)
- //               {
- //  }               MessageBoxImage.Show();
- //
- //           
-            //declare variables
-           
-
-
-
-            // if (RedRB.IsChecked)
-
-            //    {
-            //      exit = true;
-           //       MessageBoxImage.Show
-            //    }
-
-            //logic
-            
-           
 
         }
         private void SubmitBtn_Click_1(object sender, RoutedEventArgs e)
 
         {
             string puppy = string.Empty;
+
             using (HttpClient client = new HttpClient())
             {
-                
-              
+                // these if statments will show the results of the quiz based off user answers
 
-            
-            
                 if ("adam" == NameTB.Text.ToLower())
                 {
-                    puppy="englishsheepdog";
-                        DogLB.Items.Add("English Sheep Dog");
-                
+
+                  
+                    puppy = "sheepdog";
+                    //get json puppy sheepdog
+                    DogLB.Items.Add("Sheepdog");
+                    //shows the name Sheepdog
+
                 }
                 else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
                 {
-                    puppy="chihuahua";
-                        DogLB.Items.Add("Chihuahua");
-                        //get json puppy chihuahua
+                    puppy = "chihuahua";
+                    DogLB.Items.Add("Chihuahua");
+                    //get json puppy chihuahua
                 }
                 else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
                 {
-                    puppy="husky";
-                        DogLB.Items.Add("Husky");
-                        //get json puppy husky
+                    puppy = "husky";
+                    //get json puppy husky
+                    DogLB.Items.Add("Husky");
+                    //shows the name Husky
                 }
                 else if (q4.SelectedItem == Summer)
                 {
-                    puppy="goldenretriever";
-                        DogLB.Items.Add("Golden Retriever");
+                    puppy = "retriever";
+                    //get json puppy retriever
+                    DogLB.Items.Add("Retriever");
+                    //shows the name Golden Retriever
                 }
                 else if (q4.SelectedItem == Fall)
                 {
-                    puppy="bordercollie";
-                        DogLB.Items.Add("Border Collie");
-                        //get json puppy border collie
+                    puppy = "collie";
+                    //get json puppy collie
+                    DogLB.Items.Add("Collie");
+                    //shows the name collie
                 }
                 else if (q3.SelectedItem == Giraffe)
                 {
-                    puppy="greatdane";
-                        DogLB.Items.Add("Great Dane");
-                        //get json puppy great dane
+                    puppy = "dane";
+                    //get json puppy great dane
+                    DogLB.Items.Add("Great Dane");
+                    //shows the name great dane
                 }
                 else
-                {                 
-                    puppy="labrador";
-                        DogLB.Items.Add("Labrador");
-                        //get json puppy lab
+                {
+                    puppy = "labrador";
+                    //get json puppy labrador
+                    DogLB.Items.Add("Labrador");
+                    //shows the name labrador
                 }
 
                 HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
-
+                //if the link comes back correctly with the breed type, then it calls the image on that api to show in the image box
                 if (response.IsSuccessStatusCode)
                 {
 
                     var content = response.Content.ReadAsStringAsync().Result;
                     var dogPicture = JsonConvert.DeserializeObject<Dogbreed>(content);
-
-
 
 
                     BitmapImage dogImage = new BitmapImage();
@@ -134,10 +120,11 @@ namespace PuppyQuiz
                 {
                     MessageBox.Show("Error");
                 }
-                
+
 
             }
             DogLB.Items.Clear();
+            NameTB.Clear();
 
         }
 
