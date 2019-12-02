@@ -68,46 +68,46 @@ namespace PuppyQuiz
 
             
             
-            if ("adam" == NameTB.Text.ToLower())
-            {
-                puppy="englishsheepdog";
-                    DogLB.Items.Add("English Sheep Dog");
+                if ("adam" == NameTB.Text.ToLower())
+                {
+                    puppy="englishsheepdog";
+                        DogLB.Items.Add("English Sheep Dog");
                 
-            }
-            else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
-            {
-                puppy="chihuahua";
-                    DogLB.Items.Add("Chihuahua");
-                    //get json puppy chihuahua
                 }
-            else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
-            {
-                puppy="husky";
-                    DogLB.Items.Add("Husky");
-                    //get json puppy husky
+                else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
+                {
+                    puppy="chihuahua";
+                        DogLB.Items.Add("Chihuahua");
+                        //get json puppy chihuahua
                 }
-            else if (q4.SelectedItem == Summer)
-            {
-                puppy="goldenretriever";
-                    DogLB.Items.Add("Golden Retriever");
+                else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
+                {
+                    puppy="husky";
+                        DogLB.Items.Add("Husky");
+                        //get json puppy husky
                 }
-            else if (q4.SelectedItem == Fall)
-            {
-                puppy="bordercollie";
-                    DogLB.Items.Add("Border Collie");
-                    //get json puppy border collie
+                else if (q4.SelectedItem == Summer)
+                {
+                    puppy="goldenretriever";
+                        DogLB.Items.Add("Golden Retriever");
                 }
-            else if (q3.SelectedItem == Giraffe)
-            {
-                puppy="greatdane";
-                    DogLB.Items.Add("Great Dane");
-                    //get json puppy great dane
+                else if (q4.SelectedItem == Fall)
+                {
+                    puppy="bordercollie";
+                        DogLB.Items.Add("Border Collie");
+                        //get json puppy border collie
                 }
-            else
-            {
-                puppy="labrador";
-                    DogLB.Items.Add("Labrador");
-                    //get json puppy lab
+                else if (q3.SelectedItem == Giraffe)
+                {
+                    puppy="greatdane";
+                        DogLB.Items.Add("Great Dane");
+                        //get json puppy great dane
+                }
+                else
+                {                 
+                    puppy="labrador";
+                        DogLB.Items.Add("Labrador");
+                        //get json puppy lab
                 }
 
                 HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
@@ -134,8 +134,10 @@ namespace PuppyQuiz
                 {
                     MessageBox.Show("Error");
                 }
+                
 
             }
+            DogLB.Items.Clear();
 
         }
 
