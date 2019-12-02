@@ -71,38 +71,44 @@ namespace PuppyQuiz
             if ("adam" == NameTB.Text.ToLower())
             {
                 puppy="englishsheepdog";
-                
+                    DogLB.Items.Add("English Sheep Dog");
                 
             }
             else if (q5.SelectedItem == _19to30 && q6.SelectedItem == Mexican)
             {
                 puppy="chihuahua";
-                //get json puppy chihuahua
-            }
+                    DogLB.Items.Add("Chihuahua");
+                    //get json puppy chihuahua
+                }
             else if (q4.SelectedItem == Winter && q10.SelectedItem == ParksandRec)
             {
                 puppy="husky";
-                //get json puppy husky
-            }
+                    DogLB.Items.Add("Husky");
+                    //get json puppy husky
+                }
             else if (q4.SelectedItem == Summer)
             {
                 puppy="goldenretriever";
-            }
+                    DogLB.Items.Add("Golden Retriever");
+                }
             else if (q4.SelectedItem == Fall)
             {
                 puppy="bordercollie";
-                //get json puppy border collie
-            }
+                    DogLB.Items.Add("Border Collie");
+                    //get json puppy border collie
+                }
             else if (q3.SelectedItem == Giraffe)
             {
                 puppy="greatdane";
-                //get json puppy great dane
-            }
+                    DogLB.Items.Add("Great Dane");
+                    //get json puppy great dane
+                }
             else
             {
                 puppy="labrador";
-                //get json puppy lab
-            }
+                    DogLB.Items.Add("Labrador");
+                    //get json puppy lab
+                }
 
                 HttpResponseMessage response = client.GetAsync($"https://dog.ceo/api/breed/{puppy}/images/random").Result;
 

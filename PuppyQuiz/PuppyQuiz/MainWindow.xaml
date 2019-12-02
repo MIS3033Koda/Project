@@ -6,17 +6,17 @@
         xmlns:local="clr-namespace:PuppyQuiz"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid x:Name="ThirdQuestion" Height="423" Margin="0,0,0.2,-0.2" VerticalAlignment="Bottom">
+    <Grid Height="423" Margin="0,0,0.2,-0.2" VerticalAlignment="Bottom" Background="#FF4B8A80">
         <Grid.RowDefinitions>
             <RowDefinition Height="79*"/>
             <RowDefinition Height="62*"/>
         </Grid.RowDefinitions>
         <TextBox x:Name="NameTB" HorizontalAlignment="Left" Height="30" Margin="246,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195"/>
-        <Label x:Name="FirstQuestion" Content="What is your first name?" HorizontalAlignment="Left" Height="34" Margin="54,42,0,0" VerticalAlignment="Top" Width="171"/>
-        <Label x:Name="SecondQuestion" Content="What is your favorite color?" HorizontalAlignment="Left" Height="31" Margin="54,80,0,0" VerticalAlignment="Top" Width="160"/>
-        <Label Content="What is your favorite animal?" HorizontalAlignment="Left" Height="32" Margin="54,120,0,0" VerticalAlignment="Top" Width="171"/>
-        <Label x:Name="FourthQuestion" Content="What is your favorite season?" HorizontalAlignment="Left" Height="30" Margin="54,161,0,0" VerticalAlignment="Top" Width="171"/>
-        <Label x:Name="SixthQuestion" Content="What is your favorite food?" HorizontalAlignment="Left" Height="30" Margin="54,234,0,0" VerticalAlignment="Top" Width="160" Grid.RowSpan="2"/>
+        <Label x:Name="FirstQuestion" Content="What is your first name?" HorizontalAlignment="Left" Height="34" Margin="54,42,0,0" VerticalAlignment="Top" Width="171" Foreground="#FFFAF9F9"/>
+        <Label x:Name="SecondQuestion" Content="What is your favorite color?" HorizontalAlignment="Left" Height="31" Margin="54,80,0,0" VerticalAlignment="Top" Width="160" Foreground="#FFFAF9F9"/>
+        <Label x:Name="ThirdQuestion" Content="What is your favorite animal?" HorizontalAlignment="Left" Height="32" Margin="54,120,0,0" VerticalAlignment="Top" Width="171" Foreground="White"/>
+        <Label x:Name="FourthQuestion" Content="What is your favorite season?" HorizontalAlignment="Left" Height="30" Margin="54,161,0,0" VerticalAlignment="Top" Width="171" Foreground="White"/>
+        <Label x:Name="SixthQuestion" Content="What is your favorite food?" HorizontalAlignment="Left" Height="30" Margin="54,234,0,0" VerticalAlignment="Top" Width="160" Grid.RowSpan="2" Foreground="White"/>
         <Label Content="1." HorizontalAlignment="Left" Height="34" Margin="12,42,0,0" VerticalAlignment="Top" Width="24"/>
         <Label Content="2." HorizontalAlignment="Left" Height="34" Margin="12,80,0,0" VerticalAlignment="Top" Width="24"/>
         <Label Content="3." HorizontalAlignment="Left" Height="34" Margin="12,120,0,0" VerticalAlignment="Top" Width="24"/>
@@ -27,26 +27,44 @@
         <Label Content="8." HorizontalAlignment="Left" Height="34" Margin="12,70.2,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="0.492,0.688" Grid.Row="1"/>
         <Label Content="9." HorizontalAlignment="Left" Height="34" Margin="12,104.2,0,0" VerticalAlignment="Top" Width="24" Grid.Row="1"/>
         <Label Content="10." HorizontalAlignment="Left" Height="34" Margin="12,138.2,0,0" VerticalAlignment="Top" Width="24" Grid.Row="1"/>
-        <Label x:Name="SeventhQuestion" Content="What is your favorite ice cream flavor?" HorizontalAlignment="Left" Height="33" Margin="54,36.2,0,0" VerticalAlignment="Top" Width="222" Grid.Row="1"/>
-        <Label x:Name="FithQuestion" Content="What age range are you in?" HorizontalAlignment="Left" Height="34" Margin="54,200,0,0" VerticalAlignment="Top" Width="160"/>
-        <Label x:Name="EigthQuestion" Content="What do you like to do on a rainy day?" HorizontalAlignment="Left" Height="30" Margin="54,74.2,0,0" VerticalAlignment="Top" Width="222" Grid.Row="1"/>
-        <Label x:Name="NinethQuestion" Content="What is your eye color?" HorizontalAlignment="Left" Height="29" Margin="54,109.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1"/>
-        <Label x:Name="TenthQuestion" Content="Which one is better?" HorizontalAlignment="Left" Height="34" Margin="54,138.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1"/>
-        <Button x:Name="SubmitBtn" Content="Get My Results" HorizontalAlignment="Left" Height="32" Margin="535,144.2,0,0" VerticalAlignment="Top" Width="171" Grid.Row="1" Click="SubmitBtn_Click_1"/>
-        <Label x:Name="QuizLbl" Content="Puppy Quiz: What puppy are you?" HorizontalAlignment="Left" Height="32" Margin="281,5,0,0" VerticalAlignment="Top" Width="203"/>
+        <Label x:Name="SeventhQuestion" Content="What is your favorite ice cream flavor?" HorizontalAlignment="Left" Height="33" Margin="54,36.2,0,0" VerticalAlignment="Top" Width="222" Grid.Row="1" Foreground="White"/>
+        <Label x:Name="FithQuestion" Content="What age range are you in?" HorizontalAlignment="Left" Height="34" Margin="54,200,0,0" VerticalAlignment="Top" Width="160" Foreground="White"/>
+        <Label x:Name="EigthQuestion" Content="What do you like to do on a rainy day?" HorizontalAlignment="Left" Height="30" Margin="54,74.2,0,0" VerticalAlignment="Top" Width="222" Grid.Row="1" Foreground="White"/>
+        <Label x:Name="NinethQuestion" Content="What is your eye color?" HorizontalAlignment="Left" Height="29" Margin="54,109.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1" Foreground="White"/>
+        <Label x:Name="TenthQuestion" Content="Which one is better?" HorizontalAlignment="Left" Height="34" Margin="54,138.2,0,0" VerticalAlignment="Top" Width="141" Grid.Row="1" Foreground="White"/>
+        <Button x:Name="SubmitBtn" Content="Get My Results" HorizontalAlignment="Left" Height="32" Margin="535,144.2,0,0" VerticalAlignment="Top" Width="171" Grid.Row="1" Click="SubmitBtn_Click_1" Background="#FF463E3E" Foreground="White"/>
+        <Label x:Name="QuizLbl" Content="Puppy Quiz: What puppy are you?" HorizontalAlignment="Left" Height="32" Margin="281,5,0,0" VerticalAlignment="Top" Width="203" Background="#FFD8AAD2" FontWeight="Bold"/>
         <ComboBox x:Name="q2" HorizontalAlignment="Left" Height="30" Margin="246,84,0,0" VerticalAlignment="Top" Width="139">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF504C4C" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
             <ComboBoxItem x:Name="Turquoise" Content="Turquoise" HorizontalAlignment="Left" Width="137"/>
             <ComboBoxItem x:Name="Red" Content="Red"/>
             <ComboBoxItem x:Name="Evergreen" Content="Evergreen"/>
             <ComboBoxItem x:Name="Purple" Content="Purple"/>
         </ComboBox>
         <ComboBox x:Name="q3" HorizontalAlignment="Left" Height="30" Margin="246,122,0,0" VerticalAlignment="Top" Width="139">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF504C4C" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
             <ComboBoxItem x:Name="Giraffe" Content="Giraffe" HorizontalAlignment="Left" Width="137"/>
             <ComboBoxItem x:Name="Elephant" Content="Elephant"/>
             <ComboBoxItem x:Name="Lion" Content="Lion"/>
             <ComboBoxItem x:Name="Penguin" Content="Penguin"/>
         </ComboBox>
         <ComboBox x:Name="q4" HorizontalAlignment="Left" Height="30" Margin="246,163,0,0" VerticalAlignment="Top" Width="139">
+            <ComboBox.OpacityMask>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF504C4C" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.OpacityMask>
             <ComboBoxItem x:Name="Winter" Content="Winter" HorizontalAlignment="Left" Width="137"/>
             <ComboBoxItem x:Name="Spring" Content="Spring"/>
             <ComboBoxItem x:Name="Summer" Content="Summer"/>
@@ -86,7 +104,8 @@
             <ComboBoxItem x:Name="TheOffice" Content="The Office" HorizontalAlignment="Left" Width="137"/>
             <ComboBoxItem x:Name="ParksandRec" Content="Parks and Rec"/>
         </ComboBox>
-        <Image x:Name="DogImage" HorizontalAlignment="Left" Height="171" Margin="432,84,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="304"/>
+        <Image x:Name="DogImage" HorizontalAlignment="Left" Height="171" Margin="448,122,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="304"/>
+        <ListBox x:Name="DogLB" HorizontalAlignment="Left" Height="38" Margin="484,84,0,0" VerticalAlignment="Top" Width="222" Background="{x:Null}" Foreground="White" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Window>
